@@ -4,7 +4,7 @@ import Order_Entry.*;
 import Item_Management.*;
 import java.util.*;
 public class OrderTest {
-    public static void main(String[] args) {
+    public static void runOrderManagement() {
         OrderEntry oe = new OrderEntry();
         Scanner s = new Scanner(System.in);
         System.out.println("Welcome to Order Management\n");

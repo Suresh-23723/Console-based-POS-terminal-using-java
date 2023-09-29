@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class PaymentTest {
-    public static void main(String[] args) {
+    public static void runPaymentManagement() {
         PaymentManagement pm = new PaymentManagement();
         System.out.println("Welcome to Payment Management");
         Scanner s = new Scanner(System.in);

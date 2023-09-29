@@ -4,7 +4,7 @@ import User_Management.*;
 import java.util.*;
 
 public class UserTest {
-    public static void main(String[] args) {
+    public static void runUserManagement() {
         Scanner s = new Scanner(System.in);
         UserManager um = new UserManager();
         System.out.println("Welcome to User Management\n");

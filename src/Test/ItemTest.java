@@ -6,7 +6,7 @@ import Item_Management.ItemManagement;
 import java.util.*;
 
 public class ItemTest{
-    public static void main(String[] args) {
+    public static void runItemManagement() {
         ItemManagement im = new ItemManagement();
         System.out.println("Welcome to Item Management");
         Scanner s = new Scanner(System.in);
