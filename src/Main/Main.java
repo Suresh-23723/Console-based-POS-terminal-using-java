@@ -14,12 +14,12 @@ public class Main {
         {
             System.out.println("Enter 1 if you are Admin");
             System.out.println("Enter 2 if you are Customer");
-            System.out.println("Enter 3 to quit");
+            System.out.println("Enter q to quit");
             System.out.print("Please select the user:");
-            int user = s.nextInt();
+            int user = s.next().charAt(0);
             switch(user)
             {
-                case 1:
+                case '1':
                     boolean key = true;
                     while (key) {
                         System.out.println("Enter 1 to Item Management and Categorization");
@@ -43,7 +43,7 @@ public class Main {
                         }
                     }
                     break;
-                case 2:
+                case '2':
                     key = true;
                     while (key) {
                         System.out.println("Enter 1 to Order Entry");
@@ -67,7 +67,7 @@ public class Main {
                         }
                     }
                 break;
-                case 3:
+                case 'q':
                     System.out.println("Thanks for using ABC shop");
                     return;
                 default:

@@ -20,11 +20,11 @@ public class UserTest {
             switch (ch) {
                 case '1':
                     System.out.println("Enter the username: ");
-                    String username = s.next();
+                    String username = s.nextLine();
                     System.out.println("Enter the password: ");
-                    String password = s.next();
+                    String password = s.nextLine();
                     System.out.println("Enter the role of the user: ");
-                    String role = s.next();
+                    String role = s.nextLine();
                     User user = new User(username,password,role);
                     int r = um.addUser(user);
                     if(r == 1)
@@ -42,11 +42,11 @@ public class UserTest {
                     System.out.println("Enter the userId :");
                     int userId = s.nextInt();
                     System.out.println("Enter the username: ");
-                    username = s.next();
+                    username = s.nextLine();
                     System.out.println("Enter the password: ");
-                    password = s.next();
+                    password = s.nextLine();
                     System.out.println("Enter the role of the user: ");
-                    role = s.next();
+                    role = s.nextLine();
                     user = new User(userId,username,password,role);
                     r = um.updateUser(user);
                     if(r == 1)
@@ -56,9 +56,9 @@ public class UserTest {
                     break;
                 case '3':
                     System.out.println("Enter the username: ");
-                    username = s.next();
+                    username = s.nextLine();
                     System.out.println("Enter the password: ");
-                    password = s.next();
+                    password = s.nextLine();
                     user = um.authenticateUser(username,password);
                     if(user == null)
                         System.out.println("Authentication failed and no users found");
